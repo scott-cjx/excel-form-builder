@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<style>
+		.form {
+			background-color: lightyellow;
+			margin-left: 10em;
+			margin-right: 10em;
+			padding: 2em 0;
+		}
+
+		.section {
+			background-color: lightblue;
+			border-radius: 25px;
+			margin-bottom: 3em;
+			/* padding-top: 0.5em; */
+		}
+
+		input,
+		textarea {
+			font-family: inherit;
+			font-size: inherit;
+		}
+
+		input[type=text] {
+			padding: 10px;
+			margin-bottom: 10px;
+			border-radius: 10px;
+			width: 50%;
+			border: 0;
+			box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
+		}
+
+		select {
+			padding: 10px;
+			margin-bottom: 10px;
+			border-radius: 10px;
+			width: 50%;
+			border: 0;
+			box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
+		}
+
+		.input_field {
+			padding: 1em;
+			/* padding-left: 1em;
+    padding-right: 1em; */
+			margin: 1em;
+		}
+	</style>
+
+	<title>Incident Reporting</title>
+</head>
+
+<body>
+
+	<div>
+		<h1 id="form-title" style="text-align: center;">Incident Reporting</h1>
+	</div>
+
+	<div class="form">
+		<p1 style="text-align: left; color: red; margin-left: 1em;">* Required</p1>
+		<form action="processForm()">
+			<div class="section">
+
+				<div class="input_field">
+					<h3>Rank *</h3>
+					<input type="text" id="pers_rank" name="pers_rank" placeholder="Your Answer">
+
+					<h3>Name *</h3>
+					<input type="text" id="pers_name" name="pers_name" placeholder="Your Answer">
+
+					<h3>Nric No. *</h3>
+					<input type="text" id="pers_nric" name="pers_nric" placeholder="Your Answer">
+
+					<h3>Gender *</h3>
+					<select name="pers_gender">
+						<option value="male">Male</option>
+						<option value="female">Female</option>
+					</select>
+
+				</div>
+			</div>
+
+			<div class="section">
+				<div class="input_field">
+					<h3>Rank *</h3>
+					<input type="text" id="pers_rank" name="pers_rank" placeholder="Your Answer">
+
+					<h3>Name *</h3>
+					<input type="text" id="pers_name" name="pers_name" placeholder="Your Answer">
+
+					<h3>Nric No. *</h3>
+					<input type="text" id="pers_nric" name="pers_nric" placeholder="Your Answer">
+				</div>
+			</div>
+		</form>
+	</div>
+
+</body>
+
+</html>

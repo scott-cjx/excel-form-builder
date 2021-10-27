@@ -1,0 +1,7 @@
+﻿identifier,label,type,type-extra
+pers_rank,Rank,text_dropdown,sg_rank
+pers_name,Name,text,
+pers_nric,NRIC No.,text,sg_nric
+pers_gender,gender,mcq,gender
+pers_email,Email Address,text,email
+date_of_generation,Date of Generation,date,
