@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Your html title here -->
+  <title id="html_title">Your html Title</title>
+
+  <style id="html_styles">
+    /* Your Styles Here */
+    .form {
+        background-color: lightyellow;
+        margin-left: 10em;
+        margin-right: 10em;
+        padding: 2em 0;
+    }
+
+    .section {
+        background-color: lightblue;
+        border-radius: 25px;
+        margin: 1em;
+        margin-bottom: 3em;
+        padding: 1em;
+        /* padding-top: 0.5em; */
+    }
+
+    input, textarea {
+        font-family:inherit;
+        font-size: inherit;
+    }
+
+    input[type=text] {
+        padding:10px;
+        margin-bottom: 10px;
+        border-radius:10px;
+        width:50%;
+        border:0;
+      box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+    }
+
+    input[type=submit] {
+        appearance:none;
+        -webkit-appearance:none;
+
+        /* usual styles */
+        padding:10px;
+        border:none;
+        background-color:#3F51B5;
+        color:#fff;
+        font-weight:600;
+        border-radius:5px;
+        width:50%;
+    }
+
+    select {
+        padding:10px;
+        margin-bottom: 10px;
+        border-radius:10px;
+        width:50%;
+        border:0;
+      box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+    }
+
+    .search_btn {
+        border: none;
+        width: 2em;
+        height: 2em;
+        box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+        border-radius: 100%;
+    }
+
+  </style>
+
+  <script id="html_js_consts" type="text/javascript">
+
+  </script>
+
+  <script src="functions/form_manifest.js"></script>
+  
+  <!-- Your javascript scripts here -->
+  <script id="html_script" type="text/javascript">
+    const form_manifest_short = {
+      "0": [
+          "form_title",
+          "Scottie C Form Generator",
+          "-1",
+          "text",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+      ],
+      "1": [
+          "form_name",
+          "Form Name",
+          "1",
+          "text",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+      ],
+      "2": [
+          "form_manifest",
+          "Form Manifest",
+          "1",
+          "file",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+      ],
+      "3": [
+          "form_templates",
+          "Templates",
+          "1",
+          "file",
+          "multiple",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+      ],
+      "4": [
+          "form_styles",
+          "Styles",
+          "1",
+          "file",
+          "multiple",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+      ],
+      "5": [
+          "form_functions",
+          "Functions",
+          "1",
+          "file",
+          "multiple",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+      ],
+      "6": [
+          "generator_submit",
+          "Generate",
+          "2",
+          "button",
+          "submit",
+          "",
+          "",
+          "",
+          "",
+          "generate_form",
+          ""
+      ],
+      "headers": [
+          "ident",
+          "label",
+          "section",
+          "type",
+          "type-extra",
+          "validation",
+          "options",
+          "default",
+          "locked",
+          "function",
+          "custom-html"
+      ]
+    }
+  </script>
+
+  <script id="js_render_functions" type="text/javascript">
+
+  </script>
+
+  <!-- your default onload script -->
+  <script id="html_onload_script" type="text/javascript">
+    function onload_(){
+      t_formManifest_sjson();
+      render();
+    }
+  </script>
+
+</head>
+<body id="html_body" onload="onload_();">
+  <div id="html_form_title_div">
+		<h1 id="html_form_title" style="text-align: center;">
+      Your Form Title
+    </h1>
+	</div>
+  <div>
+    <div class="form" id="html_form_div">
+      <form action="form_submit_action()" id="html_form_body">
+        Your Form
+      </form>
+    </div>
+  </div>
+</body>
+</html>

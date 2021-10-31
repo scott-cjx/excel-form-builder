@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="templates/styles.css">
+
+  <script type="text/javascript" src="functions/form_manifest.js"></script>
+
+  <title>Scottie C Form Generator</title>
+
+  <script type="text/javascript">
+    function onload_(){
+      formManifest_sortBySection();
+    }
+  </script>
+
+</head>
+<body onload="onload_();">
+
+  <div>
+		<h1 id="form-title" style="text-align: center;">Scottie C Form Generator</h1>
+	</div>
+
+  <div>
+    <div class="form">
+      <p1 style="text-align: left; color: red; margin-left: 1em;">* Required</p1>
+      <form action="getAllInputs()">
+        <div class="section">
+            <h3>Form Data (CSV)*</h3>
+            <input type="file" id="form_data" name="form_data">
+        
+            <h3>Templates (Folder)*</h3>
+            <!-- ** for Folder -->
+            <input type="file" id="form_qn_templates" name="form_qn_templates" webkitdirectory directory multiple>
+  
+            <h3>Functions (Folder)*</h3>
+            <!-- ** for Folder -->
+            <input type="file" id="form_functions" name="form_functions" webkitdirectory directory multiple>
+  
+            <h3>Rank*</h3>
+            <input type="text" id="pers_rank" name="pers_rank" placeholder="Your Answer">
+            <input type="button" onclick="getAllInputsTags();" id="search_rank" name="search_rank" value="S" class="search_btn">
+        </div>
+  
+        <div class="section">
+            <input type="submit" id="submit" name="submit" value="Generate Form">
+            <input type="button" onclick="getAllInputsTags();" id="submit2" name="submit2" value="Generate Form">
+        </div>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>

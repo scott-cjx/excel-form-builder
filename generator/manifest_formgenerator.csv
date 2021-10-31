@@ -1,0 +1,7 @@
+﻿ident,label,section,type,type-extra,validation,options,default,locked,function,custom-html
+form_name,Form Name,1,text,,,,,,,
+form_manifest,Form Manifest,1,file,,,,,,,
+form_templates,Templates,1,file,multiple,,,,,,
+form_styles,Styles,1,file,multiple,,,,,,
+form_functions,Functions,1,file,multiple,,,,,,
+generator_submit,Generate,2,button,submit,,,,,generate_form,
