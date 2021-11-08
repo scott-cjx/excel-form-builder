@@ -74,15 +74,11 @@
 
   </style>
 
-  <script id="html_js_consts" type="text/javascript">
-
+  <script id="html_templates" type="text/javascript">
   </script>
 
-  <script src="functions/form_manifest.js"></script>
-  
-  <!-- Your javascript scripts here -->
-  <script id="html_script" type="text/javascript">
-    const form_manifest_short = {
+  <script id="html_js_consts" type="text/javascript">
+  const form_manifest_short = {
       "0": [
           "form_title",
           "Scottie C Form Generator",
@@ -190,6 +186,12 @@
     }
   </script>
 
+  <script src="functions/render.js"></script>
+  
+  <!-- Your javascript scripts here -->
+  <script id="html_script" type="text/javascript">
+  </script>
+
   <script id="js_render_functions" type="text/javascript">
 
   </script>
@@ -197,8 +199,9 @@
   <!-- your default onload script -->
   <script id="html_onload_script" type="text/javascript">
     function onload_(){
-      t_formManifest_sjson();
-      render();
+      // t_formManifest_sjson();
+      // render();
+      template_extract("qn_submit");
     }
   </script>
 
